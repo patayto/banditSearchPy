@@ -1,5 +1,4 @@
 import random
-import numpy as np
 
 from History import History
 
@@ -57,12 +56,12 @@ class Guessing(Model):
 		return random.randint(0, self.numArms - 1)
 
 	def run(self, probs):
-		np.random.seed(self.seed)
+		random.seed(self.seed)
 
 		for i in range(self.horizon):
 			armToPull = self.choose()
 			self.updateDecisions(armToPull)
-			success = np.random.binomial(1, probs[armToPull])
+			success = 1 if random.random() < probs[armToPull] else 0 # bernoulli pull
 			self.updateRewardHistory(success)
 			newHist = self.realHistory.addEvent(armToPull, success)
 			self.setRealHistory(newHist)
@@ -99,7 +98,7 @@ class WSLS(Model):
 					return previous
 
 	def run(self, probs):
-		np.random.seed(self.seed)
+		random.seed(self.seed)
 
 		previous = 0
 		success = 0
@@ -108,7 +107,7 @@ class WSLS(Model):
 			armToPull = self.choose(i, previous, success)
 			self.updateDecisions(armToPull)
 			previous = armToPull
-			success = np.random.binomial(1, probs[armToPull])
+			success = 1 if random.random() < probs[armToPull] else 0  # bernoulli pull
 			self.updateRewardHistory(success)
 			newHist = self.realHistory.addEvent(armToPull, success)
 			self.setRealHistory(newHist)
@@ -132,12 +131,12 @@ class SuccessRatio(Model):
 			return random.randint(0, self.numArms-1)
 
 	def run(self, probs):
-		np.random.seed(self.seed)
+		random.seed(self.seed)
 
 		for i in range(self.horizon):
 			armToPull = self.choose()
 			self.updateDecisions(armToPull)
-			success = np.random.binomial(1, probs[armToPull])
+			success = 1 if random.random() < probs[armToPull] else 0  # bernoulli pull
 			self.updateRewardHistory(success)
 			newHist = self.realHistory.addEvent(armToPull, success)
 			self.setRealHistory(newHist)
@@ -164,12 +163,12 @@ class PiFirst(Model):
 				return random.randint(0, self.numArms-1)
 
 	def run(self, probs):
-		np.random.seed(self.seed)
+		random.seed(self.seed)
 
 		for i in range(self.horizon):
 			armToPull = self.choose(i)
 			self.updateDecisions(armToPull)
-			success = np.random.binomial(1, probs[armToPull])
+			success = 1 if random.random() < probs[armToPull] else 0  # bernoulli pull
 			self.updateRewardHistory(success)
 			newHist = self.realHistory.addEvent(armToPull, success)
 			self.setRealHistory(newHist)
@@ -193,12 +192,12 @@ class EpsilonGreedy(Model):
 			return random.randint(0, self.numArms-1)
 
 	def run(self, probs):
-		np.random.seed(self.seed)
+		random.seed(self.seed)
 
 		for i in range(self.horizon):
 			armToPull = self.choose()
 			self.updateDecisions(armToPull)
-			success = np.random.binomial(1, probs[armToPull])
+			success = 1 if random.random() < probs[armToPull] else 0  # bernoulli pull
 			self.updateRewardHistory(success)
 			newHist = self.realHistory.addEvent(armToPull, success)
 			self.setRealHistory(newHist)
@@ -223,12 +222,12 @@ class EpsilonDecreasing(Model):
 			return random.randint(0, self.numArms-1)
 
 	def run(self, probs):
-		np.random.seed(self.seed)
+		random.seed(self.seed)
 
 		for i in range(self.horizon):
 			armToPull = self.choose(i)
 			self.updateDecisions(armToPull)
-			success = np.random.binomial(1, probs[armToPull])
+			success = 1 if random.random() < probs[armToPull] else 0  # bernoulli pull
 			self.updateRewardHistory(success)
 			newHist = self.realHistory.addEvent(armToPull, success)
 			self.setRealHistory(newHist)
@@ -265,7 +264,7 @@ class EWSLS(Model):
 					return previous
 
 	def run(self, probs):
-		np.random.seed(self.seed)
+		random.seed(self.seed)
 
 		previous = 0
 		success = 0
@@ -274,7 +273,7 @@ class EWSLS(Model):
 			armToPull = self.choose(i, previous, success)
 			self.updateDecisions(armToPull)
 			previous = armToPull
-			success = np.random.binomial(1, probs[armToPull])
+			success = 1 if random.random() < probs[armToPull] else 0  # bernoulli pull
 			self.updateRewardHistory(success)
 			newHist = self.realHistory.addEvent(armToPull, success)
 			self.setRealHistory(newHist)
@@ -341,13 +340,13 @@ class TauSwitch(Model):
 		return next
 
 	def run(self, probs):
-		np.random.seed(self.seed)
+		random.seed(self.seed)
 
 		for i in range(self.horizon):
 			armToPull = self.choose(i)
 			self.updateDecisions(armToPull)
 			previous = armToPull
-			success = np.random.binomial(1, probs[armToPull])
+			success = 1 if random.random() < probs[armToPull] else 0  # bernoulli pull
 			self.updateRewardHistory(success)
 			newHist = self.realHistory.addEvent(armToPull, success)
 			self.setRealHistory(newHist)
@@ -414,13 +413,13 @@ class LatentState(Model):
 		return next
 
 	def run(self, probs):
-		np.random.seed(self.seed)
+		random.seed(self.seed)
 
 		for i in range(self.horizon):
 			armToPull = self.choose(i)
 			self.updateDecisions(armToPull)
 			previous = armToPull
-			success = np.random.binomial(1, probs[armToPull])
+			success = 1 if random.random() < probs[armToPull] else 0  # bernoulli pull
 			self.updateRewardHistory(success)
 			newHist = self.realHistory.addEvent(armToPull, success)
 			self.setRealHistory(newHist)
