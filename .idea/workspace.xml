@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2031b0a4-87fe-41c9-8e78-4a2c54f2bab4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Map1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Map1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SingleReduce1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reduce1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reduce1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,29 +21,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="8610" />
+          <entry key="py" value="8618" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="8610" />
+          <entry key="Python" value="8618" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Map1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -60,10 +60,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Reduce1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="12" column="14" selection-end-line="135" />
               <folding>
-                <marker date="1573120440000" expanded="true" signature="1486:3115" ph="..." />
+                <element signature="e#34#44#0" expanded="true" />
+                <marker date="1573123635023" expanded="true" signature="1485:3114" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SingleReduce1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="570" lean-forward="true" selection-start-line="570" selection-end-line="570" />
+              <folding>
+                <element signature="e#34#44#0" expanded="true" />
+                <element signature="e#1915#2442#0" />
               </folding>
             </state>
           </provider>
@@ -72,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5985">
-              <caret line="419" column="43" lean-forward="true" selection-start-line="419" selection-start-column="43" selection-end-line="419" selection-end-column="43" />
+            <state relative-caret-position="135">
+              <caret line="9" column="24" selection-end-line="425" selection-end-column="54" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <element signature="e#1688#2208#0" />
@@ -94,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/History.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="120">
+              <caret line="8" column="29" selection-end-line="17" />
               <folding>
                 <marker date="1573051916067" expanded="true" signature="14:16" ph="..." />
               </folding>
@@ -125,9 +139,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/History.py" />
-        <option value="$PROJECT_DIR$/Reduce1.py" />
         <option value="$PROJECT_DIR$/Map1.py" />
         <option value="$PROJECT_DIR$/Models.py" />
+        <option value="$PROJECT_DIR$/Reduce1.py" />
+        <option value="$PROJECT_DIR$/SingleReduce1.py" />
       </list>
     </option>
   </component>
@@ -218,12 +233,12 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1022864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1022864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" sideWeight="0.49879807" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Event Log" sideWeight="0.3261131" side_tool="true" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.3261131" side_tool="true" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6738869" visible="true" weight="0.32941177" />
@@ -240,20 +255,33 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/History.py">
+    <entry file="file://$PROJECT_DIR$/Map1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
-            <marker date="1573051916067" expanded="true" signature="14:16" ph="..." />
+            <element signature="e#32#42#0" expanded="true" />
+            <marker date="1573123053345" expanded="true" signature="94:96" ph="..." />
+            <marker date="1573123053345" expanded="true" signature="579:582" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Reduce1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="14" selection-end-line="135" />
+          <folding>
+            <element signature="e#34#44#0" expanded="true" />
+            <marker date="1573123635023" expanded="true" signature="1485:3114" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5985">
-          <caret line="419" column="43" lean-forward="true" selection-start-line="419" selection-start-column="43" selection-end-line="419" selection-end-column="43" />
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-end-line="425" selection-end-column="54" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#1688#2208#0" />
@@ -270,24 +298,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Reduce1.py">
+    <entry file="file://$PROJECT_DIR$/History.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-end-line="17" />
           <folding>
-            <marker date="1573120440000" expanded="true" signature="1486:3115" ph="..." />
+            <marker date="1573051916067" expanded="true" signature="14:16" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Map1.py">
+    <entry file="file://$PROJECT_DIR$/SingleReduce1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="397">
+          <caret line="570" lean-forward="true" selection-start-line="570" selection-end-line="570" />
           <folding>
-            <element signature="e#32#42#0" expanded="true" />
-            <marker date="1573123053345" expanded="true" signature="94:96" ph="..." />
-            <marker date="1573123053345" expanded="true" signature="579:582" ph="..." />
+            <element signature="e#34#44#0" expanded="true" />
+            <element signature="e#1915#2442#0" />
           </folding>
         </state>
       </provider>

@@ -22,7 +22,7 @@ def rankModels(modelScores):
 	gameScore = list(enumerate(modelScores)) # [(model, score)]
 
 	# shift indices due to exclusion of optimal model
-	gameScore = [(ind + 1 if ind >=1  else ind, score) for (ind, score) in gameScore]
+	gameScore = [(ind + 1 if ind >=1 else ind, score) for (ind, score) in gameScore]
 
 	maxScore = max(modelScores)
 
