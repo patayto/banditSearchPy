@@ -1,10 +1,9 @@
 import random
 import numpy as np
-from abc import ABC, abstractmethod
 
 from History import History
 
-class Model(ABC):
+class Model(object):
 
 	def __init__(self, numArms, horizon, numGames, seed):
 		self.realHistory = History([(0, 0) for i in range(numArms)])
@@ -17,7 +16,6 @@ class Model(ABC):
 		self.numGames = numGames
 		self.seed = seed
 
-	@abstractmethod
 	def run(self):
 		pass
 
